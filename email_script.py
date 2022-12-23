@@ -10,7 +10,8 @@ email_origem = ''
 email_destino = ('')
 
 assunto = 'Orçamento de produtos'
-body = open('corpo_email.txt', 'r').read()
+body = open('corpo_email.txt', 'r', encoding='utf-8').read()
+# o encoding é muito importante para corrigir a questão da acentuação.
 
 mensagem = EmailMessage()
 
